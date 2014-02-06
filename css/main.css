@@ -1,0 +1,377 @@
+@import "fonts/stylesheet.css";
+
+html,
+button,
+input,
+select,
+textarea{
+	color:#222;
+}
+
+body{
+	font-size:1em;
+	line-height:1.4;
+}
+
+::-moz-selection{
+	background:#b3d4fc;
+	text-shadow:none;
+}
+
+::selection{
+	background:#b3d4fc;
+	text-shadow:none;
+}
+
+hr{
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #ccc;
+	margin:1em 0;
+	padding:0;
+}
+
+img{
+	vertical-align:middle;
+}
+
+fieldset{
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+textarea{
+	resize:vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html{
+	height:100%;
+}
+body{
+	height:100%;
+	cursor:default;
+	font:12px/1.2 "Raleway", Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+}
+a{
+	color:#00ad68;
+	-webkit-transition:color 0.2s;
+	-moz-transition   :color 0.2s;
+	-ms-transition    :color 0.2s;
+	-o-transition     :color 0.2s;
+	transition        :color 0.2s;
+}
+a:hover,
+a:focus{
+	outline:none;
+	color:#333;
+}
+
+#wrap{
+	position:relative;
+	min-height:100%;
+}
+
+#loader{
+	position:fixed; z-index:9999;
+	top:0; left:0;
+	width:100%; height:100%;
+	background:#00ad68;
+}
+#loader:before{
+	content:" ";
+	position:absolute;
+	top:50%; left:50%;
+	width:56px; height:49px;
+	margin:-25px 0 0 -28px;
+	background:url("../img/logoblack.png") no-repeat;
+}
+
+.limit{
+	width:980px;
+	margin:0 auto;
+}
+
+#header{
+	position:relative;
+	background:#202020;
+}
+#header .limit{
+	position:relative;
+	padding-top:47px;
+}
+#header .logo_wrap{
+	padding-bottom:52px;
+}
+#header .logo{
+	width:56px;
+	background:url("../img/logo.png");
+		-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#header .logo h1{
+	margin:0;
+}
+#header .logo a,
+#header .logo span{
+	display:block;
+	height:49px;
+	overflow:hidden;
+	background:#202020 url("../img/logo.png") no-repeat 0 -50px;
+	opacity:0;
+	text-indent:100%;
+	-webkit-transition:opacity 0.2s;
+	-moz-transition   :opacity 0.2s;
+	-ms-transition    :opacity 0.2s;
+	-o-transition     :opacity 0.2s;
+	transition        :opacity 0.2s;
+}
+#header .logo a:hover,
+#header .logo span:hover,
+#header .logo a:focus{
+	opacity:1;
+}
+
+.slogan{
+	height:268px;
+	padding:130px 0 100px;
+	overflow:hidden;
+	font-weight:100; font-size:70px;
+	color:#FFF;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.slogan .limit strong.hunters{
+	color:#DFBA69;
+}
+
+.slogan .limit strong.christmas{
+	color:#D4544B;
+}
+
+.slogan .limit{
+	position:relative;
+}
+.slogan p{
+	position:absolute;
+	top:0; left:0;
+	margin:0;
+}
+.slogan p + p{
+	display:none;
+}
+.slogan p + p span{
+	visibility:hidden;
+}
+.slogan strong{
+	display:block;
+	position:relative;
+	-webkit-transition:all 0.2s;
+	-moz-transition   :all 0.2s;
+	-ms-transition    :all 0.2s;
+	-o-transition     :all 0.2s;
+	transition        :all 0.2s;
+}
+.slogan p.left strong{
+	left:-200px;
+	opacity:0;
+}
+.slogan p.right strong{
+	left:200px;
+	opacity:0;
+}
+
+#header .links{
+	position:absolute;
+	top:62px; right:0;
+	font-size:14px; font-weight:bold;
+		-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#header .links ul{
+	margin:0; padding:0;
+	list-style:none;
+}
+#header .links li{
+	float:left;
+	padding-left:57px;
+}
+#header .links li a{
+	text-decoration:none;
+	color:#FFF;
+}
+#header .links li a:hover,
+#header .links li a:focus{
+	color:#00ad68;
+}
+#header .links li a.active{
+	color:#FFF;
+	text-decoration:line-through;
+	cursor:default;
+}
+
+.gray_section{
+	position:relative;
+	overflow:hidden;
+	background:#202020;
+}
+.gray_section .sh{
+	display:none;
+	position:absolute; z-index:1;
+	top:0; left:0;
+	width:100%; height:20px;
+
+}
+
+.contacts_section,
+.about_section{
+	padding:96px 0 95px;
+	overflow:hidden;
+	background:#202020;
+	font-weight:bold; font-size:16px; line-height:22px;
+	color:#FFF;
+
+}
+.contacts_section p{
+	margin:0; font-weight:300;padding-bottom:30px;
+}
+
+.about_section p{
+	margin:0; font-weight:300;padding-bottom:42px;
+}
+
+.contacts_section .mail{
+	padding: 10px 0 80px;
+	font-size:36px; font-weight: 300; line-height:30px;
+}
+.contacts_section .mail a{
+	text-decoration:none;
+	color:#FFF;
+}
+.contacts_section .mail a:hover,
+.contacts_section .mail a:focus{
+	color:#00ad68;
+}
+
+
+.contacts_section .fz20{
+	font-size:16px; font-weight:300; line-height:26px; padding-bottom: 109.5px;
+}
+
+.contacts_section .fz20 a{
+	text-decoration:none;
+	font-weight:700;
+	color:#FFF;
+}
+.contacts_section .fz20 a.dribbble:hover,
+.contacts_section .fz20 a.dribbble:focus{
+	color:#ea4c89;
+}
+
+.contacts_section .fz20 a.facebook:hover,
+.contacts_section .fz20 a.facebook:focus{
+	color:#6D8BC9;
+}
+
+.contacts_section .fz20 a.twitter:hover,
+.contacts_section .fz20 a.twitter:focus{
+	color:#03ABEA;
+}
+
+.contacts_section .fz20 a.instagram:hover,
+.contacts_section .fz20 a.instagram:focus{
+	color:#407EE5;
+}
+
+.about_section{
+	font-size:300;
+	padding:36px 0 52px;
+}
+
+
+.works_section{
+	padding:52px 0;
+}
+.works_section h2{
+	display:none;
+}
+#works ul{
+	margin:0 -10px; padding:0;
+	list-style:none;
+}
+#works li{
+	float:left;
+	width:230px;
+	margin:10px;
+}
+#works li.colspan1{
+	width:230px;
+}
+#works li.colspan2{
+	width:480px;
+}
+#works li.colspan3{
+	width:730px;
+}
+#works li.colspan4{
+	width:980px;
+}
+
+#works li.madeby{
+	margin: 70px 0 0 490px;
+}
+
+#works .madeby {
+
+}
+#works li > a{
+	display:block;
+}
+#works li .gs{
+	position:absolute;
+	top:0; left:0;
+}
+
+#works li .txt{
+	display:none;
+	position:absolute;
+	top:0; left:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	width:100%; height:100%;
+	padding:5% 0 0 10%;
+	background:rgba(0,173,104,0.9);
+	font-size:20px;
+	color:#FFF;
+}
+#works li .txt h3{
+	font-weight:normal; font-size:22px;
+}
+#works li .txt a{
+	color:#FFF;
+	text-decoration:none;
+}
+#works li .txt a:hover,
+#works li .txt a:focus{
+	opacity:0.8;
+}

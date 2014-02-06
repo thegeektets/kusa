@@ -1,0 +1,114 @@
+.entrance1{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-name: rollIn;
+      -moz-animation-duration: 2s;
+      -moz-animation-timing-function: ease;
+      -moz-animation-fill-mode: both;
+      -moz-animation-name: rollIn;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+      animation-name: rollIn;
+}
+.entrance2{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-name: slideInLeft;
+      -moz-animation-duration: 2s;
+      -moz-animation-timing-function: ease;
+      -moz-animation-fill-mode: both;
+      -moz-animation-name: slideInLeft;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+      animation-name: slideInLeft;
+}
+.entrance3{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-name: slideInRight;
+      -moz-animation-duration: 2s;
+      -moz-animation-timing-function: ease;
+      -moz-animation-fill-mode: both;
+      -moz-animation-name: slideInRight;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+      animation-name: slideInRight;
+}
+.entrance4{
+      -webkit-animation-duration: 1s;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-name: rotateInDownLeft;
+      -moz-animation-duration: 1s;
+      -moz-animation-timing-function: ease;
+      -moz-animation-fill-mode: both;
+      -moz-animation-name: rotateInDownLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+      animation-name: rotateInDownLeft;
+      
+     }
+     .entrance5{
+      -webkit-animation-duration: 1s;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-name: rotateInDownRight;
+      -moz-animation-duration: 1s;
+      -moz-animation-timing-function: ease;
+      -moz-animation-fill-mode: both;
+      -moz-animation-name: rotateInDownRight;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+      animation-name: rotateInDownRight;
+      
+     }
+.emphasis1{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-name: swing;
+      -moz-animation-duration: 2s;
+      -moz-animation-timing-function: ease;
+      -moz-animation-fill-mode: both;
+      -moz-animation-name: swing;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+      animation-name: swing;
+}
+.emphasis2{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-name: tada;
+      -moz-animation-duration: 2s;
+      -moz-animation-timing-function: ease;
+      -moz-animation-fill-mode: both;
+      -moz-animation-name: tada;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+      animation-name: tada;
+}
+.exit1{
+      -webkit-animation-duration: 2s;
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: both;
+      -webkit-animation-name: rollOut;
+      -moz-animation-duration: 2s;
+      -moz-animation-timing-function: ease;
+      -moz-animation-fill-mode: both;
+      -moz-animation-name: rollOut;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+      animation-name: rollOut;
+}

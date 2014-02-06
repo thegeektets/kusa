@@ -1,0 +1,31 @@
+/*
+ * Fineliner - Responsive Portfolio HTML Template
+ * By UXbarn
+ * Themeforest Profile: http://themeforest.net/user/UXbarn?ref=UXbarn
+ * Demo URL: http://themes.uxbarn.com/redirect.php?theme=fineliner_html
+ * Created: September 19, 2013
+ */
+
+/* #Main Styles
+ ================================================== */
+@import url('fineliner.css');
+
+/* #Color Schemes
+ * ==================================================
+ * You can select one of these available colors and put it into the "@import" at the bottom most:
+ * 1. gold.css
+ * 2. green.css
+ * 3. blue.css
+ * 4. yellow.css
+ * 5. pink.css
+ * 
+ * Note: Remove or comment out the following line to use the default color
+ */ 
+/*@import url('colors/pink.css');
+
+
+
+
+
+/* DEMO ONLY */
+@import url('../demo/demo.css');
