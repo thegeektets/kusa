@@ -6,37 +6,9 @@
  * Free to use and abuse under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
  */
-/*$(document).ready(function(){
-		$.ajax({
-		type:'get',
-		url:'http://localhost/Equiplex/KUSA/flat/scripts/loadslider.php',
-		data:'',
-		dataType:'json',
-		success:
-		  function(data){
-		  	var fsrc;
-		  	$.each(data,function(i,dt){
-		  		fsrc = dt.photo;
-		  	});
-		  	fimg = $('.nivo-main-image');
-		  	fimg.attr('src',fsrc);
-		  	$.each(data,function(i,dt){
-		  	    var elem = document.createElement('img');
-		  		elem.setAttribute('src',dt.photo);
-		  		elem.setAttribute('title','#caption-'+i);
 
-		  		$('.nivo-main-image').before(elem);
-		  	});
-		  },
-		fail:
-		  function(data){
-
-		  }
-	});
-});*/
-
-   (function($) {
-      var NivoSlider = function(element, options){
+(function($) {
+    var NivoSlider = function(element, options){
         // Defaults are below
         var settings = $.extend({}, $.fn.nivoSlider.defaults, options);
 
@@ -93,12 +65,10 @@
         if($(kids[vars.currentSlide]).is('img')){
             vars.currentImage = $(kids[vars.currentSlide]);
 
-
         } else {
             vars.currentImage = $(kids[vars.currentSlide]).find('img:first');
-            console.log(vars.totalSlides);
         }
-           
+            console.log(kids[vars.currentSlide]);
         // Show initial link
         if($(kids[vars.currentSlide]).is('a')){
             $(kids[vars.currentSlide]).css('display','block');
@@ -109,7 +79,6 @@
         sliderImg.attr('src', vars.currentImage.attr('src')).show();
         slider.append(sliderImg);
 
-        console.log(vars.currentImage);
         // Detect Window Resize
         $(window).resize(function() {
             slider.children('img').width(slider.width());
@@ -238,7 +207,7 @@
             // Trigger the afterChange callback
             settings.afterChange.call(this);
         }); 
-        console.log(vars.currentImage);
+        
         // Add slices for slice animations
         var createSlices = function(slider, settings, vars) {
         	if($(vars.currentImage).parent().is('a')) $(vars.currentImage).parent().css('display','block');

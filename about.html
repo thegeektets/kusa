@@ -4,38 +4,21 @@
 <head>
     <meta charset="utf-8">
     <title>KUSA |ABOUT </title>
- <script type="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+<script type="text/javascript">
 //<![CDATA[
 window.__CF=window.__CF||{};window.__CF.AJS={"ga_key":{"ua":"UA-34324154-1","ga_bs":"2"}};
 //]]>
 </script>
-<script type="text/javascript">
-//<![CDATA[
-try{if (!window.CloudFlare) { var CloudFlare=[{verbose:0,p:1381442517,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/abv=1309062649/"},atok:"e1d9c04b470127efa63be74d3639c394",petok:"1f99530f7644940567267b6be46f14ab-1382463047-1800",zone:"uxbarn.com",rocket:"0",apps:{"ga_key":{"ua":"UA-34324154-1","ga_bs":"2"}}}];var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="../../../../ajax.cloudflare.com/cdn-cgi/nexp/abv%3d3224043168/cloudflare.min.js";b.parentNode.insertBefore(a,b);}}catch(e){};
-//]]>
-</script>
-<link href='../../../../fonts.googleapis.com/css26ce.css?family=Josefin+Slab:400,700|Open+Sans:300italic,400italic,400,600,700' rel='stylesheet' type='text/css'>
+ 
 <link href="css/reset.css" rel="stylesheet">
 <link href="css/foundation.css" rel="stylesheet">
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="css/jquery.fancybox.css" rel="stylesheet">
-<link href="css/fancybox/helpers/jquery.fancybox-thumbs.css" rel="stylesheet">
-<link href="css/isotope.css" rel="stylesheet">
-<link href="css/flexslider.css" rel="stylesheet">
-<link href="css/validationEngine.jquery.css" rel="stylesheet">
 <link href="css/fineliner-init.css" rel="stylesheet">
 <link href="css/fineliner-responsivec619.css?v=1.0" rel="stylesheet">
 
-<!--[if IE 8]>
-<link href="css/foundation-ie8.css" rel="stylesheet">
-<link href="css/fineliner-ie8.css" rel="stylesheet">
-<![endif]-->
 
-<!-- Some JS that need to be loaded in this head section -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;v=3.5"></script>
-<script src="js/element.write.js"></script> <!-- for loading Flickr badge asynchronously -->
-<script src="js/writeCapture2.js"></script> <!-- for loading Flickr badge asynchronously -->
-<script src="js/custom.modernizr.js"></script>
 
 <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 <link rel="shortcut icon" href="images/favicon.png" />
@@ -58,6 +41,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 
 
+
+    <link href="img/favicon.ico"  rel="shortcut icon"/>
+
     <!-- Stylesheets -->
 	<link rel="stylesheet" href="css/font-awesome.css" />
 	<!--[if IE 7]>
@@ -79,30 +65,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	<link href="css/style.css" rel="stylesheet" />
 
 	<!-- Theme skin -->
-	<link id="t-colors" href="skins/default.css" rel="stylesheet" />
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="shortcut icon" href="ico/favicon.png" />
-
-    <style type="text/css">
-    .nav a{
-    	color: white;
-
-    }
-    .nav li :hover{
-    	  background-color:#2b94d9; 
-
-    	 webkit-transition:all 5s ;
-  -moz-transition:all 5s ;
-  -ms-transition:all 5s ;
-  -o-transition:all 5s ;
-  transition:all  5s ;
-    }
-    </style>
-
-
+	
     <!--metro-->
 
     <link href="css/metro-bootstrap.css" rel="stylesheet">
@@ -117,46 +80,70 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     <script src="js/jquery/jquery.mousewheel.js"></script>
     <script src="js/prettify/prettify.js"></script>
 
+	<script src="js/fetchData1.js"></script>
     <!-- Metro UI CSS JavaScript plugins -->
     <script src="js/load-metro.js"></script>
 
     <!-- Local JavaScript -->
     <script src="js/docs.js"></script>
     <script src="js/github.info.js"></script>
+    
 
+    
+  
 
+<style type="text/css">
+#tagline>h1,#tagline>h6{
+	color: white;
 
+}
+#tagline>h1{
+	margin-bottom:-6%;
+	margin-left: 15%;  
+}
+ @media only screen and (max-width: 960px) {
 
+    	#tagline>h6{ 
+              
+              margin-left: 8%;
+              padding: 5%;
 
+    	}
+   
+     }
+
+</style>
 
 </head>
 
 	<body>
 
-		<div id="root-border">
 			<div id="root-container">
 
 				<div id="header-container" class="content-width">
+    
     <!-- Logo -->
-          <div id="logo">
-            <a href="index.html"><img src="img/kulogo.png" alt="logo" title="logo" /></a>
-        </div>
+    <div id="logo-wrapper">
+       
         <div id="tagline">
-          <h6>	Kenyatta University Students Association </h6>
+          <h1>K.U.S.A </h1>
+          <h6>Kenyatta University Students' Association</h6>
         </div>
+   </div>
+
    <!-- Menu -->
     <div id="menu-wrapper">
 		<div class="menu-column">
         	<ul class="sf-menu sf-vertical main-menu">
 	            <li>
-	                <a href="index.html" >Home</a>
+	                <a href="index.php" >Home</a>
 	            </li>
 	            <li>
-	                <a href="about.html" class="active">About Us</a>
+	                <a href="about.html" class="active"  >About Us</a>
 	                
 	            </li>
 	            <li>
-	                <a href="administration.html" >Administration</a>
+	                <a href="administration.html"  >Administration</a>
 	               
 	            </li>
 	       	</ul>
@@ -167,13 +154,13 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	                <a href="offices.html" >KUSA Offices</a>
                 </li>
                 <li>
-	                <a href="mission.html" >Mission & Vision</a>
+	                <a href="mission.html" >Mission, Vision & Objectives</a>
                 </li>
 	            <li>
 	                <a href="blog.html" >Blog & Articles</a>
 	             </li>
 
-	                   	</ul>
+	        </ul>
        	</div>
 		
     	
@@ -196,21 +183,28 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     </div>
     
 </div> <!-- End id="header-container" -->
-
-	<section id="content">
+			
+</div>	<section id="content">
 		<div class="container">
 			<div class="row">
 
 				<div class="span5">
 					<h2>About <strong>KUSA</strong></h2>
 					<p>
-					Ei mel semper vocent persequeris, nominavi patrioque vituperata id vim, cu eam gloriatur philosophia deterruisset. Meliore perfecto repudiare ea nam, ne mea duis temporibus. Id quo accusam consequuntur, eum ea debitis urbanitas. Nibh reformidans vim ne.
+					KUSA is the student governing body of Kenyatta university. It was created to serve the student community in its pursuit of academic excellence, social welfare, peace, competitiveness in the job market, and integrity.
 					</p>
 					<p>
-					Iudico definiebas eos ea, dicat inermis hendrerit vel ei, legimus copiosae quo at. Per utinam corrumpit prodesset te, liber praesent eos an. An prodesset neglegentur qui, usu ancillae posidonium in, mea ex eros animal scribentur. Et simul fabellas sit. Populo inimicus ne est.
+					KUSA (Kenyatta University Student Association) exists to represent all students and one automatically becomes a member once you are registered as student of <a href="http://ku.ac.ke">Kenyatta University</a>.
 					</p>
 					<p>
-					Alii wisi phaedrum quo te, duo cu alia neglegentur. Quo nonumy detraxit cu, viderer reformidans ut eos, lobortis euripidis posidonium et usu. Sed meis bonorum minimum cu, stet aperiam qualisque eu vim, vide luptatum ei nec. Ei nam wisi labitur mediocrem. Nam saepe appetere ut, veritus graecis minimum no vim. Vidisse impedit id per.
+					We also ensure that all our members receive support with any financial or personal problems that they may have, through our Student Advice Centre as well as providing a range of other services. 
+					It is our Students' Union that will ensure that you enjoy your stay in Kenyatta University as a student. 
+					The Association is run by an Executive body and a congress, made up of elected students through a democratic election. Member’s views are discussed and decisions are passed unanimously.
+					<p>
+					<h3> History of KUSA </h3>
+					 Kenyatta University Student association has been in existence since 1970. However during Kenya's struggle for multiparty democracy (2nd liberation) in the 90's all student organizations were banned. This led to a mass protest from student but eventually all unions colapsed inclusing KUSA. This went on until the year 2004 when the students decided to actively take part in matters affecting them. KUSA was then reborn and has been an instrumental part in thegovernance of the university. 
+
+
 					</p>
 
 				</div>	
@@ -223,14 +217,26 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 									<img src="img/works/full/image-01-full.jpg" alt="" />
 									</li>
 									<li>
-									<img src="img/works/full/image-02-full.jpg" alt="" />
+									<img src="img/works/full/image-01-full.jpg" alt="" />
 									</li>
 									<li>
-									<img src="img/works/full/image-03-full.jpg" alt="" />
+									<img src="img/works/full/image-01-full.jpg" alt="" />
 									</li>
 								</ul>
 							</div>
-							<!-- end flexslider -->				
+							<!-- end flexslider -->
+						<p>
+							
+						<h3>The organs of KUSA</h3>
+					<ul class>
+						<li> The Annual General Meeting, also referred to as the AGM;
+						<li> The Special General Meeting, also referred to as the SGM;
+						<li> The Students’ Congress, also referred to as the Congress;
+						<li> The Executive Council;
+						<li> Subject to the approval of Congress, any other organ determined by the Executive Council.
+					</ul>
+						</p>
+
 				</div>
 			</div>
 			
@@ -241,18 +247,19 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 		</div>
 	</section>
 	
+
 	<footer class ="metro">
 				<div class="container">
 				<div class="row">
 				<div class="span3">
 				<div class="widget">		
-						<h5 class="widgetheading fg-cyan">PAGES</h5>							
+						<h5 class="widgetheading fg-cyan">IMPORTANT LINKS</h5>							
 						<ul class="link-list">
-							<li><a href="#">KUSA administration structure</a></li>
-							<li><a href="#">Current administration</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Gallery</a></li>
-							<li><a href="#">Blog</a></li>
+							<li><a href="FTP.constitution.pdf">KUSA constitution </a></li>
+							<li><a href="www.ku.ac.ke/studentemail">Student email</a></li>
+							<li><a href="http://portal.ku.ac.ke">Student portal</a></li>
+							<li><a href="http://localhost/equiplex/kusa/flat/blog.html">blog</a></li>
+							<li><a href="www.ku.ac.ke">Kenyatta University website</a></li>
 						</ul>
 					</div>
 				</div>
@@ -260,11 +267,11 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 					<div class="widget">		
 						<h5 class="widgetheading fg-cyan">KUSA INITIATIVES</h5>					
 						<ul class="link-list">
-							<li><a href="#">Somesha Mwenzako Kitty</a></li>
-							<li><a href="#">Shuttle services</a></li>
-							<li><a href="#">University Orphaned and Vulnarable students</a></i>
-							<li><a href="#">camperine magazine</a></li>
-							<li><a href="#">Study work policy</a></li>
+							<li><a href="blog">Somesha Mwenzako Kitty</a></li>
+							<li><a href="blog">Shuttle services</a></li>
+							<li><a href="blog">University Orphaned and Vulnarable students</a></i>
+							<li><a href="blog">Campanile Magazine</a></li>
+							<li><a href="blog">Study work policy</a></li>
 						</ul>					
 
 					</div>		
@@ -273,9 +280,11 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 					<div class="widget">
 						<h5 class="widgetheading fg-cyan">CONTACTS</h5>
 						<address>
-							<strong>KUSA</strong><br>
-							KENYATTA UNIVERSITY,BSSC,<br>
-							 KUSA OFFICES-FIRST FLOOR
+							<strong>KENYATTA UNIVERSITY</strong><br>
+										KUSA OFFICES,<br>
+							 			BUSINESS AND STUDENTS' SERVICE CENTER(BSSC)<br>
+							 			P.O. BOX 43844 - 00100
+							 			NAIROBI,KENYA. 
 						</address>				
 						<p class="fg-cyan">
 							<i class="icon-phone  fg-cyan "></i> (123) 456-7890	<br>
@@ -289,32 +298,32 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 						<h5 class="widgetheading fg-cyan" >SOCIAL MEDIA</h5>
 				
 					
-						<a href=""><i class="icon-facebook"  style="padding: 20px;border-radius: 100%; background-color:gray; color:white;"></i></a>
-						<a href=""><i class="icon-twitter"  style="padding: 20px;border-radius: 100%; background-color:gray; color:white;"></i></a>
+						<a href="https://www.facebook.com/KenyattaUSA"><i class="icon-facebook"  style="padding: 20px;border-radius: 100%; background-color:gray; color:white;"></i></a>
+						<a href="https://twitter.com/KenyattaUni"><i class="icon-twitter"  style="padding: 20px;border-radius: 100%; background-color:gray; color:white;"></i></a>
 
 				</div>					
 		</div>
 		</div>
 		<div id="sub-footer">
 			<div class="container">
-				<div class="row">
-                    <p><span>&copy; <span class="fg-cyan">Kenyatta Universtiy Student Association </span> : 2014  All right reserved. Designed and Built by :</span> <a href="http://equiplexdevelopres.com/" target="_blank" >Equiplex Business Solutions</a></p>
-					
-						
+				<div class="span 11">
+					 <p><span>&copy; <span class="fg-cyan">Kenyatta Universtiy Student Association </span> : 2014  All right reserved. Designed and Built by :</span> <a href="http://equiplexdevelopers.com" target="_blank" >Equiplex Business Solutions</a></p>
 					
 				</div>
 			</div>
-		</div>			
-	</footer>
-
-</div>
+		</div>
 <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>	
 
     <!-- javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/jquery.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/selectnav.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	
+    <script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/jcarousel/jquery.jcarousel.min.js"></script> 	
 	<script src="js/jquery.fancybox.pack.js"></script> 
@@ -331,13 +340,14 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	<script src="js/jquery.slitslider.js"></script>
 	<script src="js/animate.js"></script>
 	<script src="js/custom.js"></script>
-
-	<script src="js/jquery.cookie.js"></script>
 	
+	<script src="js/jquery.cookie.js"></script>
+
 <script src="js/easing.js"></script> <!-- Easing -->
 <script src="js/custom.js"></script>
 
-	<script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+
+<script src="js/jquery-ui-1.10.2.custom.min.js"></script>
 <script src="js/foundation.min.js"></script>
 <script src="js/jquery.hoverIntent.js"></script>
 <script src="js/superfish.js"></script>

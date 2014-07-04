@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>KUSA |OFFICES </title>
+    <title>KUSA |HOME </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -90,7 +90,20 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     
 
     
-  
+    <?php
+	
+	require 'connection.php' ;
+
+	$query = 'SELECT * FROM slider';
+	$r = mysql_query($query);
+
+	while($row = mysql_fetch_array($r))
+	{
+    	$data[] = ($row);
+	}
+	
+?>
+
 
 <style type="text/css">
 #tagline>h1,#tagline>h6{
@@ -136,14 +149,14 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 		<div class="menu-column">
         	<ul class="sf-menu sf-vertical main-menu">
 	            <li>
-	                <a href="index.php" >Home</a>
+	                <a href="index.php" class="active">Home</a>
 	            </li>
 	            <li>
 	                <a href="about.html" >About Us</a>
 	                
 	            </li>
 	            <li>
-	                <a href="administration.html"  >Administration</a>
+	                <a href="administration.html" >Administration</a>
 	               
 	            </li>
 	       	</ul>
@@ -151,10 +164,10 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	       	<div class="menu-column">
 	       	<ul class="sf-menu sf-vertical main-menu">
 	       		<li>
-	                <a href="offices.html" class="active" >KUSA Offices</a>
+	                <a href="offices.html" >KUSA Offices</a>
                 </li>
                 <li>
-	                <a href="mission.html" >Mission & Vision</a>
+	                <a href="mission.html" >Mission, vision & Vision</a>
                 </li>
 	            <li>
 	                <a href="blog.html" >Blog & Articles</a>
@@ -185,239 +198,162 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </div> <!-- End id="header-container" -->
 			
 </div>
+
 	
+	<section id="featured">
+
+		<!-- start slider -->
+			
+              	<!-- Slider -->
+                <div id="nivo-slider">
+                	<div class="nivo-slider">
+                	<?php 
+                	for($i= 0 ; $i < count($data) ; $i++){
+                	?>
+                	<img src="<?php echo $data[$i]['photo'] ;?>" alt="" title="<?php echo $data[$i]['caption']  ?>"  />
+                    	
+                    	<?php
+                		}
+                		?>
+                    	</div>
+                    
+					
+						</div>
+					
+
+		
+	</section>
 
 	<section id="content">
-		<div class="container">	
-			<div class="row marginbot30">
+		<div class="container">
+		
+
+			<div class="row">
+					<div class="span4">
+						<div class="box aligncenter">
+							<div class="aligncenter icon">
+								<i class="icon-home icon-circled icon-64 active"></i>
+							</div>
+							<div class="text">
+								<h6>Welcome To KUSA</h6>
+								<p>
+								Welcome to Kenyatta University Students' Assosiation, the student governing body of <a href = "http://www.ku.ac.ke/">Kenyatta University </a> We exist to make the student life comfortable and to link then stusents community to opportunities outside of school. Every Kenyatta University student is a member of KUSA.
+								</p>
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="span3">
+						<div class="box aligncenter">
+							<div class="aligncenter icon">
+								<i class="icon-folder-open icon-circled icon-64 active"></i>
+							</div>
+							<div class="text">
+								<h6>Who are we ?</h6>
+								<p>
+								KUSA was created to serve the student community in its pursuit of academic excellence, social welfare, peace, competitiveness in the job market, and integrity 							</p>
+								<a href="http://localhost/equiplex/kusa/flat/about.html">Read more</a>
+							</div>
+						</div>
+					</div>
+					<div class="span4">
+						<div class="box aligncenter">
+							<div class="aligncenter icon">
+								<i class="icon-user icon-circled icon-64 active"></i>
+							</div>
+							
+							<div class="text">
+								<h6>What KUSA is doing ?</h6>
+								<p>
+								KUSA is keen to ensure that students are kept invloved and informed on various important issues affecting their stay in the University and even after graduation. 
+								Which is why we provide information of all the events, achievements and opportunities. 
+								</p>
+								<a href="http://localhost/equiplex/kusa/flat/blog.html">Visit our blog</a>
+							</div>
+						</div>
+					</div>
+			</div>
+					
+			<!-- divider -->
+			<div class="row">
 				<div class="span12">
+					<div class="solidline"></div>
+				</div>
+			</div>
+			
+			
+			<!-- end divider -->
+				<div class="metro">
+				<div class="row">
+            
+			<div class="span4" >
+			
+            <div class="span4 bg-cyan padding20 text-center">
+            <h2 class="fg-white">News and Updates</h2>
+            </div>
+			
+			<div class="span4">
+            	<div class="accordion acd1" id="accordion1">
+				
+					
+									
+				</div>	
+						</div>
+					</div>
 
-					<h4 class="heading"><strong>KUSA</strong> Administrative Structure<span></span></h4>
+
+
+			<div class="span4" >
 					
-					<div class="row">
-					
-					<div class="metro">
-					
-					 <div class = "grid" style="padding-left :5% ;padding-right :5%">
-					    <div class="row">
-            			  
-            			  <div class="span7 bg-cyan ">
-            				<h2 class="fg-white">The President</h2>
-            				<div class="wrapper" style="background : white">
-								<div class="testimonial">
-									<p> The office of the president is charged with the following responsibilities in the administration of Kenyatta university Student Association
-										
-											<li>Represent KUSA at the University Council and the Students Disciplinary Committee, unless he/she is the subject of a disciplinary hearing.
+			<div class="span4 bg-darker padding20 text-center">
+			<h2 class="fg-white">Events and Activities</h2>
+            </div>
+            <div class="span4">
+            		<div class="accordion acd2" id="accordion2">
+						
+						
 											
-											<li>With the consent of the Executive Council, Congress, and the University’s management, represent KUSA at the national and international levels on issues relevant to KUSA’s interests.
-											<li>Address, at the invitation of the University, public functions of the University;
-											</ul>
-											Read more on from the constitution
-										
-									</p>
+					</div>	
+						</div>
+					</div>
+			
+					<div class="span4" >
 					
-								</div>
-							</div>	
-            		     </div>
-            					
-            					
+					<div class="span4 bg-cyan padding20 text-center">
+					<h2 class="fg-white">Blog and Posts</h2>
+            		</div>
+			
 
-
-            	
+            			<div class="span4">
 						
-
-            			<div class="span7 bg-cyan ">
-            					<h2 class="fg-white">The Secretary General</h2>
-
-							<div class="wrapper">
-								<div class="testimonial">
-									<p >
-										The office of the secretary general is charged with the following responsibilities: 
+								<div class="accordion acd3" id="accordion3">
 						
-										<li> Keep, in a businesslike manner, true and accurate records of the proceedings of every meeting of the Executive Council, the AGM, and SGM
-										<li> Represent KUSA at the Students Disciplinary Committee of the Senate.
-										<li> Subject to the directions of the Executive Council, maintain and have custody of all KUSA correspondence
+					
+						
 											
-									</p>
-									
-								</div>
-							</div>	
-						</div>	
+					</div>	
+						</div>
+						</div>
 
-					</div>
-					  <div class="row">
-            			  
-            			  <div class="span7 bg-cyan ">
-            				<h2 class="fg-white">The vice president</h2>
-            				<div class="wrapper" style="background : white">
-								<div class="testimonial">
-									<p> The office of the vice president is charged with the responsibility of
 
-											<li> In the President’s absence, assume and act on the authority and responsibility of the President, with the exception of Article 37, Section 2, Subsection f;
-											<li> Represent KUSA at meetings of the Students Welfare Committee of the Senate, the Catering and Accommodation Services Board
-											<li> As Chairperson of the Security, Accommodation, and Catering Congressional Committee, liaise with the appropriate offices of the University for proper catering, accommodation, and security services
-										</ul>
-									</p>
+			</div>
+			</div>
+			
+				
+			</div>
 					
-								</div>
-							</div>	
-            		     </div>
-            					
-            					
-
-
-            	
-						
-
-            			<div class="span7 bg-cyan ">
-            					<h2 class="fg-white">The Finance Secretary</h2>
-
-							<div class="wrapper">
-								<div class="testimonial">
-									<p >
-										The Finance Secretary shall have authority and responsibility
-										
-											<li>Keep true, accurate, and timely records of the proceedings of every financial transaction of KUSA
-											<li>Ensure that every payment and expenditure is duly authorized
-											<li>Be a mandatory signatory of the KUSA vote at the University’s Finance Department
-											<li>Liaise with the DVC Finance and the University’s Tendering Board for the procurement of KUSA’s goods and services
-											<li>Preside as Chairperson of the Tuckshop Balloting Committee
-
-									</p>
-									
-								</div>
-							</div>	
-						</div>	
-
-					</div>
-					  <div class="row">
-            			  
-            			  <div class="span7 bg-cyan ">
-            				<h2 class="fg-white">The academic Secretary</h2>
-            				<div class="wrapper" style="background : white">
-								<div class="testimonial">
-									<p>	The Academic Secretary shall have the following authority and responsibilities
-										
-											<li>Address issues arising directly from the academic interests of the members
-											<li>Enhance the provision of high quality academic facilities, resources, and services for world-class academic programs at the University
-											<li>Represent KUSA at meetings of the Senate, the Senate Executive, the Library Committee of the Senate, and the Bookshop Committee of the Senate
-									</p>
-					
-								</div>
-							</div>	
-            		     </div>
-
-            			<div class="span7 bg-cyan ">
-            					<h2 class="fg-white">The Organising Secretary</h2>
-
-							<div class="wrapper">
-								<div class="testimonial">
-									<p >
-										The Organizing Secretary shall have the following authority and responsibility 
-										
-											<li> Coordinate the activities of the Executive Council with other organs of KUSA.
-											<li>  As determined by the Executive Council, supervise the procurement of supplies and facilities for KUSA’s operation.
-											<li>  Represent KUSA at the Students Welfare Committee of the Senate and the Catering and Accommodation Services Board
-											<li>As chairperson of the Sports, Games, and Entertainment Committee of the Congress, ensure the proper provision of sports, games, and entertainment services
-									</p>
-									
-								</div>
-							</div>	
-						</div>	
-					</div>
-
-
-           		<div class = "row">
-						  <div class="span7 bg-cyan ">
-            				<h2 class="fg-white">Gender and social welfare secretary</h2>
-            				<div class="wrapper" style="background : white">
-								<div class="testimonial">
-									<p> 
-										The Gender and Social Welfare Secretary shall have authority and responsibility as provided in the Constitution and in particular shall be
-										<li> Represent KUSA at the Students Welfare Committee of the Senate and the Catering and Accommodation Services Board
-										<li> Promote gender equity in KUSA and the University
-										<li> Supervise all KUSA activities directly related to gender and social welfare and, in particular, network with organizations concerned about gender issues
-										
-									</p>
-					
-								</div>
-							</div>	
-            		     </div>
-            					
-            					
-
-
-            	
-						
-
-            			<div class="span7 bg-cyan ">
-            					<h2 class="fg-white">Special Needs Secretary</h2>
-
-							<div class="wrapper">
-								<div class="testimonial">
-									<p >
-										The Special Needs Secretary shall have authority and responsibility as stipulated below: 
-									
-											<li>1. Represent members with special needs in the Executive Council;
-											<li>2. Deal with matters related to the welfare of members with special needs;
-											<li>3. Maintain updated records of members with special needs;
-											<li>4. Promote the integration of members with special needs in the university community;
-											<li>5. Coordinate Disability Day and related activities;
-									</p>
-									
-								</div>
-							</div>	
-						</div>	
-
-					</div>
-
-					 <div class="row">
-            			  
-            			  <div class="span7 bg-cyan ">
-            				<h2 class="fg-white">Campus chairpersons</h2>
-            				<div class="wrapper" style="background : white">
-								<div class="testimonial">
-									<p> there shall be a Campus Chairperson for the branch offices of KUSA established in each of the satellite campuses charged with the following responsibilities 
-										<li>Discuss matters affecting members in his/her respective campus with members of the campus congressional delegation
-										<li>Collaborate with the Deputy Dean of his/her respective campus in organizing KUSA activities, preparing budget proposals, and managing budget expenditures, which shall be monitored by the Deputy Dean
-										<li>Collaborate with the Finance Secretary in managing KUSA investments and fixed assets in his/her respective campus.
-									</p>
-					
-								</div>
-							</div>	
-            		     </div>
-            					
-            					
-
-
-            	
-						
-
-            			<div class="span7 bg-cyan ">
-            					<h2 class="fg-white">Representative for Institution-Based and Open Learning Students</h2>
-
-							<div class="wrapper">
-								<div class="testimonial">
-									<p >
-										The Representative for Institution-Based and Open Learning Students shall have authority and responsibility as provided in this Constitution and in particular shall
-										<li>In consultation with congresspersons for institution-based and open learning students, liaise with the Executive Council  on matters related to institution-based and open learning students
-										<li>In consultation with the Executive Council, communicate with institution-based and open learning students on matters related to their welfare.
-									</p>
-									
-								</div>
-							</div>	
-						</div>	
-
-					</div>
-
-					</div>
-					</div>
-
-            				
-		      </div>	
+			
+			<!-- divider -->
+			<div class="row">
+				<div class="span12">
+					<div class="solidline"></div>
+				</div>
+			</div>
+			<!-- end divider -->
+			
 	</section>
 	
-
 	<footer class ="metro">
 				<div class="container">
 				<div class="row">
@@ -454,7 +390,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 										KUSA OFFICES,<br>
 							 			BUSINESS AND STUDENTS' SERVICE CENTER(BSSC)<br>
 							 			P.O. BOX 43844 - 00100
-							 			NAIROBI,KENYA. 
+							 			NAIROBI,KENYA.  
 						</address>				
 						<p class="fg-cyan">
 							<i class="icon-phone  fg-cyan "></i> (123) 456-7890	<br>
@@ -468,8 +404,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 						<h5 class="widgetheading fg-cyan" >SOCIAL MEDIA</h5>
 				
 					
-						<a href="https://www.facebook.com/KenyattaUSA"><i class="icon-facebook"  style="padding: 20px;border-radius: 100%; background-color:gray; color:white;"></i></a>
-						<a href="https://twitter.com/KenyattaUni"><i class="icon-twitter"  style="padding: 20px;border-radius: 100%; background-color:gray; color:white;"></i></a>
+						<a href="https://www.facebook.com/KUSA"><i class="icon-facebook"  style="padding: 20px;border-radius: 100%; background-color:gray; color:white;"></i></a>
+						<a href="https://twitter.com/KUSA"><i class="icon-twitter"  style="padding: 20px;border-radius: 100%; background-color:gray; color:white;"></i></a>
 
 				</div>					
 		</div>
@@ -481,7 +417,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 					
 				</div>
 			</div>
-		</div>
+		</div>			
+	</footer>
+</div>
 <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>	
 
     <!-- javascript
@@ -534,4 +472,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <script src="js/jquery.validationEngine.js"></script>
 <script src="js/waypoints.min.js"></script>
 <script src="js/finelinerf700.js?v=1.0.1"></script>
+	
+
+</body>
+
 </html>
